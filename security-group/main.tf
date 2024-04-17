@@ -62,7 +62,7 @@ resource "aws_security_group" "bastion_security_group" {
 resource "aws_security_group" "app_server_security_group" {
   name        = "${var.project_name}-${var.environment}-app-server-sg"
   description = "enable http/https access on port 80/443 via alb sg"
-  vpc_id      = 
+  vpc_id      = var.vpc_id
 
   ingress {
     description     = "http access"
