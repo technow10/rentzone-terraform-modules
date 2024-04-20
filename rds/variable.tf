@@ -8,7 +8,5 @@ variable "database_instance_class" {}
 variable "availability_zone_1" {}
 variable "db_instance_identifier" {}
 variable "multi_az_deployment" {}
-variable "database_security_group_id" {
-  
-}
+variable "database_security_group_id" {}
 
